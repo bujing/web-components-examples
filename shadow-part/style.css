@@ -1,3 +1,6 @@
+/**
+ * https://developer.mozilla.org/zh-CN/docs/Web/CSS/::part
+ */
 tabbed-custom-element::part(tab) {
   color: #0c0c0dcc;
   border-bottom: transparent solid 2px;

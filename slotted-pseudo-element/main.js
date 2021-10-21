@@ -8,6 +8,10 @@ customElements.define('person-details',
 
       const shadowRoot = this.attachShadow({mode: 'open'});
 
+      /**
+       * https://developer.mozilla.org/zh-CN/docs/Web/CSS/::slotted
+       * :slotted()：CSS 伪元素，用于选定那些被放在 HTML 模板中的元素
+       */
       const style = document.createElement('style');
       style.textContent = `
         div { padding: 10px; border: 1px solid gray; width: 200px; margin: 10px; }

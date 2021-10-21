@@ -15,5 +15,6 @@ customElements.define('my-paragraph',
 
 const slottedSpan = document.querySelector('my-paragraph span');
 
+// https://developer.mozilla.org/zh-CN/docs/Web/API/Element/assignedSlot
 console.log(slottedSpan.assignedSlot);
 console.log(slottedSpan.slot);

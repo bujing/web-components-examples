@@ -8,16 +8,16 @@
   <body>
     <h1><code>edit-word</code> demo</h1>
 
-<template id="person-template">
-  <div>
-    <h2>Personal ID Card</h2>
-    <slot name="person-name">NAME MISSING</slot>
-    <ul>
-      <li><slot name="person-age">AGE MISSING</slot></li>
-      <li><slot name="person-occupation">OCCUPATION MISSING</slot></li>
-    </ul>
-  </div>
-</template>
+    <template id="person-template">
+      <div>
+        <h2>Personal ID Card</h2>
+        <slot name="person-name">NAME MISSING</slot>
+        <ul>
+          <li><slot name="person-age">AGE MISSING</slot></li>
+          <li><slot name="person-occupation">OCCUPATION MISSING</slot></li>
+        </ul>
+      </div>
+    </template>
 
     <person-details>
       <p slot="person-name"><edit-word>Morgan</edit-word> Stanley</p>

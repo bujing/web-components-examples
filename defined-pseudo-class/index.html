@@ -13,14 +13,20 @@
         background: cyan;
       }
 
+      /**
+       * https://developer.mozilla.org/zh-CN/docs/Web/CSS/:defined
+       * :defined：CSS 伪类，表示任何已定义的元素，包括任何浏览器内置的标准元素以及已成功定义的自定义元素 (例如通过 CustomElementRegistry.define() 方法)
+       */
       :defined {
         font-style: italic;
       }
 
+      /* 隐藏未定义完成的自定义元素 */
       simple-custom:not(:defined) {
         display: none;
       }
 
+      /* 显示已成功定义的自定义元素 */
       simple-custom:defined {
         display: block;
       }
